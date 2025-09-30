@@ -128,3 +128,8 @@ temp/
 benchmark_results/
 env_benchmark_results/
 results/
+
+mesa-23.1.3/
+mesa-23.1.3.tar.xz
+
+*.ply

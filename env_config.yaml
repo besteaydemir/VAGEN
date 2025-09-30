@@ -1,0 +1,7 @@
+    env1:
+        env_name: room_exploration  # or frozenlake
+        env_config:
+          render_mode: vision
+            # parameters to override the default env config
+        train_size: 10  # number of instances
+        test_size: 10

@@ -10,6 +10,10 @@ import hydra
 from omegaconf import DictConfig
 from vagen.server.llm_as_judge import wandb_run_context
 
+import ray
+if not ray.is_initialized():
+    ray.init(address="local", include_dashboard=False)
+
 class BatchEnvServer:
     """
     A unified server for handling batch environment operations through HTTP requests.
